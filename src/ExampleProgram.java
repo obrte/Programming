@@ -62,7 +62,7 @@ class ExampleProgram {
                 der--;
                 System.out.println("");
             }
-            // inpar
+            //  impar
         }else {
             der = der - 2;
             izq = izq + 2;
