@@ -4,22 +4,21 @@ import java.util.Scanner;
 class ExampleProgram {
 
     public static void main(String[] args) {
-//        Scanner obs = new Scanner(System.in);
-        int i, j, izq, der, lvl;
-//        System.out.println("De cuantos niveles quieres el rombo?: ");
-//        int lvl = obs.nextInt();
-        lvl = 6;
+        Scanner obs = new Scanner(System.in);
+        int i, j, izq, der;
+        System.out.println("De cuantos niveles quieres el rombo?: ");
+        int lvl = obs.nextInt();
         //PARES
         if(lvl%2==0) {
             izq = (lvl / 2) - 1;
             der = (lvl / 2) - 1;
-            for(i=1; i<lvl; i=i+2) {
+            for(i=1; i<(lvl/2)+1; i=i+1) {
                 for (j = -1; j < lvl; j++) {
                     if (j < izq || j> der) {
-                        if((i>lvl/2)&&(j<0 || j>lvl-2)) {
+                        if((i==lvl/2)&&(j<0 || j>lvl-2)) {
                             System.out.print(". ");
                         }else {
-                            System.out.print("+ ");
+                            System.out.print("  ");
                         }
                     } else {
                         System.out.print("* ");
@@ -47,7 +46,6 @@ class ExampleProgram {
                 System.out.println("");
             }
         }
-
         //par
         if(lvl%2==0){
             der= der-1;
