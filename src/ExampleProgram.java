@@ -8,6 +8,7 @@ class ExampleProgram {
         int i, j, izq, der;
         System.out.println("De cuantos niveles quieres el rombo?: ");
         int lvl = obs.nextInt();
+        //piramide superior
         //PARES
         if(lvl%2==0) {
             izq = (lvl / 2) - 1;
@@ -46,6 +47,7 @@ class ExampleProgram {
                 System.out.println("");
             }
         }
+        //piramide inferior
         //par
         if(lvl%2==0){
             der= der-1;
